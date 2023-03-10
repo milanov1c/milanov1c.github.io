@@ -78,27 +78,30 @@
             </p>
         </div>
     </div>
+    <div class="middle-div">
+        <div class="center">
+            <p class="main-font">Would you like to book your appointment?</p>
+        </div>
+        <hr class="underline"/>
+    </div>
     <!--main end-->
     <!--appointments start-->
-    
-    <div class="center">
-        <h2 class="main-font">Book your appointment</h2>
-        <div id="form">
-            <form action="index.php" method="get">
-                <div id="form-left">
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <input type="text" name="lName" id="lName" placeholder="Last Name"/>
-                    <input type="number" name="age" id="age" placeholder="Age" value="18"/>
-                </div>
-                <div id="form-right">
-                    <input type="text" name="phone" id="phone" placeholder="+381XXXXXXXX" value="+381"/>
-                    <input type="date" name="date" id="date" placeholder="Date"/>
-                    <input type="email" name="email" id="email " placeholder="Email"/>
-                </div>
-                <textarea name="type" id="type" cols="20" rows="10" placeholder="Tell us your wishes..."></textarea>
-            </form>
-        </div>
+    <div id="services-form" class="bg-image">
+            <div id="form-wrap" >
+                
+                    <div class="center">
+                        <form id="form" action="index.php" method="get" >
+                            <input type="text" name="fName" id="fName" required="required" placeholder="Name"/>
+                            <input type="text" name="lName" id="lName" required="required" placeholder="Last Name"/>
+                            <input type="number" name="age" id="age" required="required" placeholder="18"/>
+                            <input type="email" name="email" id="email" required="required" placeholder="email@email.com"/>
+                            <textarea name="info" id="info" rows="5" cols="23" placeholder="Tell us all your wishes..."></textarea>
+                            <button type="submit" name="button" id="submit">Submit</button>
+                        </form>
+                    </div>   
+            </div>
     </div>
+    
     
     <!--appointments end-->
     <!--footer start-->
