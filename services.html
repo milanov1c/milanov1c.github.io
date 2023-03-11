@@ -16,8 +16,9 @@
     <!--font end-->
     <!--icons start-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
     <!--icons end-->
-    <title>NM - Services</title>
+    <title>L&amp;L - services</title>
     <!--css template-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
 </head>
@@ -25,15 +26,15 @@
     <!--header start-->
     <header >
         <div id="logo">
-            <a href="index.html"><h1 class="main-font-thin">N M</h1></a>                      
+            <a href="index.html"><h1 class="logo-font">L&amp;L</h1></a>                     
         </div>
-        <nav>
+        <nav id="nav">
             <ul class="hover">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="services.html" class="current">Services</a></li>
-                <li><a href="about-us.html">About us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="author.html" >Author</a></li>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="services.html" class="current link">Services</a></li>
+                <li><a href="about-us.html" class="link">About us</a></li>
+                <li><a href="gallery.html" class="link">Gallery</a></li>
+                <li><a href="author.html" class="link">Author</a></li>
             </ul>
         </nav>
     </header>
@@ -52,11 +53,10 @@
         <hr class="underline"/>
     </div>
     <div class="content">
-        <div id="makeup" class="content-box" ></div>
+        <div id="lashes" class="content-box" ></div>
         <div class="content-box">
-            <p class="main-font">
-                Makeup is the best way to accent your beauty. 
-                Our salon is opened for all the people who want to express their style and step out of their comfort zone.
+            <p class="main-font"> 
+                Our salon is opened for all the people who want to express their beauty and step out of their comfort zone.
             </p>
         </div>
     </div>
@@ -78,27 +78,30 @@
             </p>
         </div>
     </div>
+    <div class="middle-div">
+        <div class="center">
+            <p class="main-font">Would you like to book your appointment?</p>
+        </div>
+        <hr class="underline"/>
+    </div>
     <!--main end-->
     <!--appointments start-->
-    
-    <div class="center">
-        <h2 class="main-font">Book your appointment</h2>
-        <div id="form">
-            <form action="index.php" method="get">
-                <div id="form-left">
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <input type="text" name="lName" id="lName" placeholder="Last Name"/>
-                    <input type="number" name="age" id="age" placeholder="Age" value="18"/>
-                </div>
-                <div id="form-right">
-                    <input type="text" name="phone" id="phone" placeholder="+381XXXXXXXX" value="+381"/>
-                    <input type="date" name="date" id="date" placeholder="Date"/>
-                    <input type="email" name="email" id="email " placeholder="Email"/>
-                </div>
-                <textarea name="type" id="type" cols="20" rows="10" placeholder="Tell us your wishes..."></textarea>
-            </form>
-        </div>
+    <div id="services-form" class="bg-image">
+            <div id="form-wrap" >
+                
+                    <div class="center">
+                        <form id="form" action="index.php" method="get" >
+                            <input type="text" name="fName" id="fName" required="required" placeholder="Name"/>
+                            <input type="text" name="lName" id="lName" required="required" placeholder="Last Name"/>
+                            <input type="number" name="age" id="age" required="required" placeholder="18"/>
+                            <input type="email" name="email" id="email" required="required" placeholder="email@email.com"/>
+                            <textarea name="info" id="info" rows="5" cols="23" placeholder="Tell us all your wishes..."></textarea>
+                            <button type="submit" name="button" id="submit">Submit</button>
+                        </form>
+                    </div>   
+            </div>
     </div>
+    
     
     <!--appointments end-->
     <!--footer start-->
@@ -114,7 +117,7 @@
         <div class="footer-center">
             <p class="main-font">Design by <span class="main-font">Nikolina Milanović</span>. All rights reserved &copy; <span>ICT College</span></p>
             <hr/>
-            <a href="">Sitemap </a>
+            <a href="sitemap.xml">Sitemap </a>
             <a href="">RSS</a>
                 
         </div>

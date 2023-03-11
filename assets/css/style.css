@@ -3,13 +3,17 @@
     padding: 0;
     font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-
+@keyframes pColor{
+    from{color: #e8d1d5;}
+    to{color: #42070e;}
+}
 body{
     background-color: #faebee;
 }
-.main-font-thin{
-    font-family: 'Jost', sans-serif;
+.logo-font{
+    font-family: 'Oooh Baby', cursive;
 }
 .main-font{
     font-family: 'Jost', sans-serif;
@@ -49,32 +53,35 @@ header {
 }
 #logo h1{
     color:#000;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
-    padding: 5px 0;
+    padding: 10px 0;
+    font-weight: 300;
+    text-align: right;
 }
-nav {
+#nav {
     width: 50%;
     text-align: right;
     margin-top: 40px;
     margin-right: 50px;
+   
 }
-nav ul li{
-    
-    padding: 0px 10px;
+
+#nav ul li{
+    padding: 0px 25px;
     display: inline;
     
 }
-nav ul li a{
+.link{
     color:#42070e;
     font-size: 20px;
     text-transform: uppercase;
+    
 }
 .hover a:hover, .current {
     color:#000;
     border-bottom: #000 1px solid;
-    padding-top: 3px;
-    
+    padding: 5px 0px;
 }
 
 #main{
@@ -90,7 +97,7 @@ nav ul li a{
     
 }
 .shadow{
-    background:rgba(0,0,0,0.6);
+    background-color:rgba(0,0,0,0.6);
     width:100%;
     height: 525px;
     padding: 10% 0%; 
@@ -111,6 +118,7 @@ nav ul li a{
     font-size:35px;
     letter-spacing: 5px;
     font-weight: 300;
+    animation: pColor 2s infinite alternate ;
 }
 .middle-div{
     height: 135px;
@@ -143,7 +151,9 @@ nav ul li a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
+
 .content p{
     padding: 100px 50px;
     text-align: center;
@@ -170,11 +180,12 @@ nav ul li a{
     font-weight: 400;
     color:#000;
     font-style: italic;
+    transition: all 600ms;
 }
 .button :hover{
     background-color: #42070e;
     color:#fff;
-    transition: 600ms;
+   
 }
 #about {
     width: 100%;
@@ -188,7 +199,6 @@ nav ul li a{
     display: flex;
     justify-content: space-around;
     align-items:center;
-    
 }
 #footer a{
     color:#42070e;
@@ -199,7 +209,7 @@ nav ul li a{
 .socials {
     width: 15%;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 5px auto;
 }
 .fa{
@@ -218,7 +228,7 @@ nav ul li a{
 }
 .footer-links{
     width: 15%;
-    
+    text-align: right;
 }
 .footer-links ul li{
     padding: 5px 0px;
@@ -246,13 +256,13 @@ nav ul li a{
 .author-content img{
     width: 375px;
     height: 565px;
-    
-    
+    transition: all 400ms;
+    box-shadow:0px 0px 10px  #9a9a9a; ;
 }
 .author-content img:hover{
     transform: scale(0.9);
-    transition: 400ms;
     cursor: pointer;
+    
 }
 .bottom{
     width: 50%;
@@ -291,8 +301,8 @@ nav ul li a{
     background-image: url("../img/services-bg.jpg");
     background-attachment: fixed;
 }
-#makeup {
-    background-image: url("../img/makeup-article.jpg");
+#lashes {
+    background-image: url("../img/lashes-article.jpg");
 }
 #skincare {
     background-image: url("../img/skin-article.jpg");
@@ -300,8 +310,43 @@ nav ul li a{
 #nails {
     background-image: url("../img/nails-article.jpg");
 }
-#form {
-    height: 400px;
+#form-wrap {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    margin: 0px auto;
+    background:rgba(255,255,255,0.3);
+}
+#form-wrap p{
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 30px;
+    
+}
+#form{
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding: 100px;
+
+}
+input, textarea, button, ::placeholder{
+    width: 300px;
+    margin: 0px auto;
+    margin-bottom:15px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 2px solid #42070e;
+    color:#42070e;
+    font-family: 'Jost', sans-serif;
+}
+#services-form{
+    background-image: url(../img/services-form.jpg);
+    background-size:cover;
+    
+}
+#about-us{
+    background-image: url("../img/about-us-bg.jpg");
+    background-attachment: fixed;
 }

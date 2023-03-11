@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Lashes and Lacquer</title>
+        <link>https://milanov1c.github.io</link>
+        <description>Follow our new updates.</description>
+        <item>
+            <title>New services</title>
+            <link>https://milanov1c.github.io/services</link>
+            <description>Follow our new services and sales.</description>
+        </item>
+        <item>
+            <title>About us.</title>
+            <link>https://milanov1c.github.io/about-us.html</link>
+            <description>Follow our updates about us.</description>
+        </item>
+    </channel>
+</rss>
