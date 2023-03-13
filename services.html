@@ -3,11 +3,11 @@
     <meta charset="UTF-8" />
     <meta
     charset="keywords"
-    content="Beauty salon, Author, Manicure, Owner, Skincare"
+    content="Appointments, Services, Manicure, Lashes, Skincare"
     />
     <meta
     charset="description"
-    content="Here you can get to know the author."
+    content="Here you can take a look at our services and choose what's the best for you."
     />
     <!-- font start-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     <!--header start-->
     <header >
         <div id="logo">
-            <a href="index.html"><h1 class="logo-font">L&amp;L</h1></a>                     
+            <a href="index.html"><img src="assets/img/logo.jpg" alt="Logo"/></a>                       
         </div>
         <nav id="nav">
             <ul class="hover">
@@ -45,6 +45,7 @@
             <h2 class="main-font">Our services</h2>
             <p class="main-font">and how to book them</p>
          </div>
+         <div class="arrow"><a href="#form"><i class="fa fa-angle-down"></i></a></div>
     </div>
     <div class="middle-div">
         <div class="center">
@@ -56,15 +57,15 @@
         <div id="lashes" class="content-box" ></div>
         <div class="content-box">
             <p class="main-font"> 
-                Our salon is opened for all the people who want to express their beauty and step out of their comfort zone.
+                Lash extensions are designed to enhance the length, thickness, and fullness of your lashes and can provide a more dramatic look compared to mascara or strip lashes.
             </p>
         </div>
     </div>
     <div class="content">
         <div class="content-box">
             <p class="main-font">
-                Taking care of your skin is very important if you wear makeup on daily basis.
-                If you want your skin to be flawless visit our cosmeticians!
+                In addition to a regular skincare routine, there are other ways to improve the health and appearance of the skin.
+                Take care of your skin and visit us!
             </p>
         </div>
         <div id="skincare" class="content-box"></div>
@@ -73,8 +74,8 @@
         <div id="nails" class="content-box" ></div>
         <div class="content-box">
             <p class="main-font">
-                Manicure is such a nice way to spice up your look. Simple nails will always make you look more elegant.
-                Our nail artists will make all your wishes come true!
+                Acrylic nails are a popular choice for those who want to have longer, stronger, and more durable nails. 
+                Acrylic nails can last for several weeks and are relatively low-maintenance compared to other types of artificial nails.
             </p>
         </div>
     </div>
@@ -95,8 +96,8 @@
                             <input type="text" name="lName" id="lName" required="required" placeholder="Last Name"/>
                             <input type="number" name="age" id="age" required="required" placeholder="18"/>
                             <input type="email" name="email" id="email" required="required" placeholder="email@email.com"/>
-                            <textarea name="info" id="info" rows="5" cols="23" placeholder="Tell us all your wishes..."></textarea>
-                            <button type="submit" name="button" id="submit">Submit</button>
+                            <textarea name="info" id="info" rows="5" cols="23" placeholder="What kind of appointment you wish?"></textarea>
+                            <button type="submit" name="button" id="button">Submit</button>
                         </form>
                     </div>   
             </div>
@@ -107,19 +108,20 @@
     <!--footer start-->
     <footer id="footer">
         <div class="socials">
-            <ul>
-                <li><a href="https://www.facebook.com"><i class="fa fa-facebook-f"></i> </a></li>
-                <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i> </a></li>
-                <li><a href="https:/www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="https:/www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+            <ul >
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i>Facebook </a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i>Instagram </a></li>
+                <li><i class="fa fa-phone"></i>+381 64 000 000 </li>
+                <li><i class="fa fa-map-pin"></i>Zdravka Čelara, 16</li>
+                <li><i class="fa fa-envelope"></i>nikolina.milanovic.120.22@ict.edu.rs</li>
             </ul>
         </div>
         <div class="footer-center">
             <p class="main-font">Design by <span class="main-font">Nikolina Milanović</span>. All rights reserved &copy; <span>ICT College</span></p>
             <hr/>
             <a href="sitemap.xml">Sitemap </a>
-            <a href="">RSS</a>
-                
+            <a href="rss.xml">RSS</a>
+            
         </div>
         <div class="footer-links">
             <ul>
@@ -130,7 +132,8 @@
                 <li><a href="author.html">Author</a></li>
             </ul>
         </div>
-    
+        
     </footer>
     <!--footer end-->
 </body>
+</html>
