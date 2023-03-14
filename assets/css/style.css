@@ -49,20 +49,14 @@ header {
 }
 #logo {
     width: 200px;
-    height: auto;
-    margin: 40px 0;
+    height: 20px;
+    margin: 40px 0px;
 }
 #logo img{
     width: 200px;
     height: 20px;
 }
-#logo h1{
-    visibility: hidden;
-}
-#logo span{
-    color:#000;
-    font-size: 25px;
-}
+
 #nav {
     width: 50%;
     text-align: right;
@@ -86,8 +80,8 @@ header {
     
 }
 .hover a:hover, .current {
-    color:#000;
-    border-bottom: #000 1px solid;
+    color:#42070e;
+    border-bottom: #42070e 1px solid;
     padding: 5px 0px;
 }
 
@@ -111,7 +105,7 @@ header {
     height: 525px;
     padding: 10% 0%; 
 }
-.shadow h2{
+.shadow h1{
     color:#e8d1d5;
     text-align: center;
     text-transform: uppercase;
@@ -119,7 +113,7 @@ header {
     letter-spacing: 10px;
     font-weight: 500;
 }
-.shadow p{
+.shadow h2{
     margin-top: -20px;
     color:#e8d1d5;
     text-align: center;
@@ -215,7 +209,7 @@ header {
     color:#42070e;
 }
 #footer a:hover{
-    color:#000;
+    color:#42070e;
 }
 .socials {
     width: 20%;
