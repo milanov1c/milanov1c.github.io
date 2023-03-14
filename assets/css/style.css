@@ -283,12 +283,12 @@ header {
 }
 
 .gallery-row{
-    width: 60%;
+    width: 80%;
     margin:0px auto;
     margin-bottom: 50px ;
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
+   
 }
 .gallery-img {
     width: 240px;
