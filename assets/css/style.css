@@ -169,21 +169,19 @@ header {
     width: 225px;
     background-color:#e8d1d5;
     height: fit-content;
-    margin: 0 auto;
-    transition: all 600ms;
+    margin: 0px auto;
+    
 }
 .button h2{
     padding: 10px 0;
     font-weight: 400;
     color:#42070e;
     font-style: italic;
-    
+    transition: all 1s;
 }
 .button :hover{
     background-color: #42070e;
     color:#faebee;
-    opacity: 0.9;
-    letter-spacing: 2px;
 }
 #about {
     width: 100%;
@@ -422,6 +420,7 @@ input, textarea, button{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    text-transform: uppercase;
 }
 .price-box{
     text-align: center;
@@ -437,9 +436,11 @@ input, textarea, button{
     font-size: 22px;
     border-bottom:solid #42070e 1px;
     padding: 10px 0px;
+    letter-spacing: 5px;
 }
 .prices td{
     padding: 7px 0px;
+    letter-spacing: 1px;
 }
 .prices td:nth-child(odd){
     text-align: left;
