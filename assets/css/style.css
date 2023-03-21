@@ -362,7 +362,7 @@ input, textarea, button{
 #services-form{
     background-image: url(../img/services-form.jpg);
     background-size:cover;
-    
+    height: auto;
 }
 #about-us{
     background-image: url("../img/about-us-bg.jpg");
