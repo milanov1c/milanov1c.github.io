@@ -96,8 +96,8 @@ header {
 .shadow{
     background-color:rgba(0,0,0,0.6);
     width:100%;
-    height: 525px;
-    padding: 10% 0%; 
+    height: inherit;
+    padding: 10% 0%;
 }
 .shadow h1{
     color:#e8d1d5;
@@ -106,9 +106,10 @@ header {
     font-size:100px;
     letter-spacing: 10px;
     font-weight: 500;
+    
 }
 .shadow h2{
-    margin-top: -20px;
+    padding-top: -20px;
     color:#e8d1d5;
     text-align: center;
     font-size:35px;
@@ -451,4 +452,59 @@ input, textarea, button{
     font-style: italic;
     font-weight: bold;
     color: #ad0a36;
+}
+#working-hours{
+    background-image: url("../img/working-hours.jpg");
+    background-attachment: fixed;
+    height: 800px;
+    position: relative;
+}
+.hours{
+    position: absolute;
+    width: 80%;
+    height: inherit;
+    text-transform: uppercase;
+}
+.hours h2{
+    color:#faebee;
+    text-align: center;
+    font-size:50px;
+    letter-spacing: 25px;
+    font-weight: 300;
+    padding-top: 70px;
+    
+}
+
+.container-hours{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.hour{
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    
+}
+.hour h3{
+    color: #e8d1d5;
+    text-align: center;
+    font-size: 40px;
+    font-weight:lighter;
+    padding-top: 200px;
+    text-transform: uppercase;
+    font-style:oblique;
+    letter-spacing: 2px;
+}
+.hour p{
+    font-size: 28px;
+    color: #faebee;
+    padding-top: 40px;
+    font-style: oblique;
+}
+.border-middle{
+    height: 475px;
+    margin: 50px 0px;
+    border-right:5px dotted #e8d1d5 ;
 }
